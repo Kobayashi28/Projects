@@ -1,6 +1,6 @@
 # Store project
 
-This is the biggest project I developed so far and this envolves an desktop application for a store inventory control. 
+This is the biggest project I developed so far and this envolves a desktop application for a store inventory control. 
 
 I'm planning on doing a Website in React for this project and a proper nodeJS API for the project, but i have no future plans on upgrading the desktop app to connect to the api because it wouldn't be worth it since it was made without planning real time updates and therefore not supporting communication between nodes in real time.
 
