@@ -4,7 +4,7 @@ This project was made so i could use an encryption algorithm on my personal proj
 
 The algorithm is based of simple encryption concepts that were mixed together to reach the results which are similar to the image
 
-![alt https://prnt.sc/GxiPi7IqM8GN](https://prnt.sc/GxiPi7IqM8GN)
+https://prnt.sc/GxiPi7IqM8GN
 
-![alt https://prnt.sc/GUfq1tUgqfu9](https://prnt.sc/GUfq1tUgqfu9)
+https://prnt.sc/GUfq1tUgqfu9
 
