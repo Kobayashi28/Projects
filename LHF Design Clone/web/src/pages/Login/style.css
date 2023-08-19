@@ -1,0 +1,330 @@
+
+.container{
+    display:flex;
+    background-color: var(--background-color);
+    width:100vw;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+}
+.containerWrapper{
+    display:flex;
+    width:65vw;
+    height:85vh;
+}
+
+.img{
+    display:flex;
+    background-image:url('../../assets/loginImage.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    flex:1;
+}
+.gradient{
+    min-width:34.2vw;
+    min-height:40vh;
+    top:52.7vh;
+    position:absolute;
+    background-image: linear-gradient( transparent, var(--secondary-color), var(--secondary-color));
+    border-bottom-left-radius: 15px;
+    overflow-y: hidden;
+
+}
+.gradient h1{
+    color:rgba(255,255,255,0.6);
+    font-size:2.5em;
+    font-weight: lighter;
+    position: relative;
+    top:12vh;
+    left:3vw;
+}
+.gradient h1 b{
+    color:rgba(255,255,255,0.8);
+}
+.gradient p{
+    color:rgba(255,255,255,0.6);
+    font-size:0.8em;
+    top:14vh;
+    font-weight: lighter;
+    position:relative;
+    max-width:20vw;
+    letter-spacing: 1px;
+    left:3vw;
+}
+.section{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5em;
+    padding:0 4vw 0 4vw;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color:white;
+    flex:1;
+}
+
+.section img{
+    width:5vw;
+    height:5vh;
+}
+.section h1{
+    font-size:1.4em;
+}
+.section h2{
+    font-weight: lighter;
+    font-size:0.8em;
+    color:rgba(0,0,0,0.6);
+    line-height: 3vh;
+}
+.section h3{
+    align-self:center;
+    font-size: 0.9em;
+    color:rgba(0,0,0,0.6)
+}
+.section input, .section button{
+    min-width: 24vw;
+    min-height: 7vh;
+    padding-left:1vw;
+    border:1px solid rgba(0,0,0,0.6);
+    border-radius:6px;
+}
+.section button{
+    letter-spacing:2px;
+    font-size: 0.7em;
+    font-weight: lighter;
+    border:1px solid rgba(0,0,0,0.2);
+    cursor:pointer
+}
+.loginImage{
+    flex: 1.5;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    display:flex;
+}
+.submit{
+    background-color:var(--secondary-color); 
+    color:white;
+    border:none;
+}
+
+.passwordLogin{
+    display:none;
+}
+.pwRecovery{
+    display:none;
+}
+.register{
+    display:none;
+}
+
+.passwordLogin ul{
+    display:grid;
+    grid-template-areas: 
+    'b04 b15 b26'
+    'b38 b79 cancel';
+    gap:0.5rem;
+    min-width: 24vw;
+    min-height: 14vh;
+}
+.passwordLogin ul li{
+    border:1px solid rgba(0,0,0,0.2);
+    border-radius:5px;
+    display:flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.passwordLogin ul li:nth-child(1){
+    grid-area:b04;
+}
+.passwordLogin ul li:nth-child(2){
+    grid-area:b15;
+}
+.passwordLogin ul li:nth-child(3){
+    grid-area:b26;
+}
+.passwordLogin ul li:nth-child(4){
+    grid-area:b38;
+}
+.passwordLogin ul li:nth-child(5){
+    grid-area:b79 li;
+}
+.passwordLogin ul li:nth-child(6){
+    grid-area:cancel;
+    border:none;
+}
+
+.passwordLogin ul li button{
+    flex:1;
+    min-width: 0;;
+    min-height: 0;
+    border-radius:0;
+    z-index: 1;
+    background-color: transparent;
+    border:none;
+    transition:0.2s;
+}
+.passwordLogin ul li button:hover{
+    background-color: rgba(0,0,0,0.2);
+    transition: 0.2s;
+}
+.cancelbtn{
+    background-image:url('../../assets//Delete.svg');
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-position: center;
+}
+
+.cancelbtn:hover{
+    background-color: transparent;
+}
+
+.passwordLogin ul li h4{
+    display:flex;
+    align-self: center;
+    position:absolute;
+    z-index: 0;
+
+}
+.passrecovery{
+    align-self: flex-end;
+    font-weight: lighter;
+    text-decoration: none;
+    color:black;
+    font-size:0.8em;
+}
+
+.arrowLeft{
+    align-self:flex-end;
+    position:absolute;
+    top:13vh;
+    cursor:pointer;
+}
+
+.register{
+    gap: 0;
+    padding:0;
+    border-radius: 15px;
+    justify-content: flex-start;
+}
+
+.register header{
+    width:100vw;
+    background-color: var(--secondary-color);
+    color:white;
+    display:flex;
+    gap:1rem;
+    padding:1.5rem;
+    align-items: center;
+}
+.register header div{
+    display:flex;
+    flex-direction: column;
+    gap:0.3rem;
+}
+.register header div h4{
+    font-weight: lighter;
+    font-size: 1.5em;
+}
+.register header div h6{
+    font-weight: lighter;
+    color:rgba(255,255,255,0.6);
+    font-size: 0.8em;
+}
+.registerContent form{
+    display:grid;
+    grid-template-areas:
+    'name name name email email email'
+    'address address address complement complement complement'
+    'cep cep cep docs docs docs'
+    'city city state docs docs docs'
+    'country country country docs docs docs';
+    padding:2rem 1rem 2rem 1rem;
+    gap:1rem;
+}
+.regForm:nth-child(1){
+    grid-area:name;
+}
+.regForm:nth-child(2){
+    grid-area:address;
+}
+.regForm:nth-child(3){
+    grid-area:cep;
+}
+.regForm:nth-child(4){
+    grid-area:city;
+}
+.regForm:nth-child(5){
+    grid-area:state;
+}
+.regForm:nth-child(6){
+    grid-area:country;
+}
+.regForm:nth-child(7){
+    grid-area:email;
+}
+.regForm:nth-child(8){
+    grid-area:complement;
+}
+.docs{
+    grid-area:docs;
+    background-color: rgb(245,247,250);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+.docs h4{
+    font-size:0.7em;
+    font-weight: lighter;
+    color:rgba(0,0,0,0.5)
+}
+.regForm{
+    min-height: 7vh;
+    padding-left:1vw;
+    border:1px solid rgba(0,0,0,0.6);
+    border-radius:6px;
+    color: rgba(0,0,0,1)
+}
+.regForm[type='file']{
+    display:none;
+}
+.docLabel{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 7vh;
+    min-width: 24vw;
+    border:1px solid rgba(0,0,0,0.4);
+    border-radius:6px;
+    color:rgba(0,0,0,0.5);
+}
+.docLabel h5{
+    font-weight: lighter;
+}
+.browse{
+    min-height: 70%;
+    min-width: 10vw;
+    font-size: 0.7em;
+    font-weight: lighter;
+    cursor:pointer;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(0,0,0,0.2);
+    color:rgba(255,255,255,0.7);
+    border-radius:3px;
+    display:flex;
+}
+.register footer{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right:2rem;
+    gap:1rem;
+    flex:1;
+    border-top:1px solid rgba(0,0,0,0.2);
+}
+.register footer button{
+    min-width: 12vw;
+}

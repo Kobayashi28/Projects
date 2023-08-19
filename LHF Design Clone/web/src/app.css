@@ -1,0 +1,22 @@
+:root{
+    --primary-color: #ffffff;
+    --background-color: #EDEFF2 ;
+    --secondary-color: #081326;
+    
+}
+button{
+    cursor:pointer
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    overflow-x: hidden;
+    font-family: 'arial';
+
+}
+
+html{
+    background-color:var(--background-color);
+}
