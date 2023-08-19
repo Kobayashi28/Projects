@@ -5,3 +5,6 @@ This project was made so i could use an encryption algorithm on my personal proj
 The algorithm is based of simple encryption concepts that were mixed together to reach the results which are similar to the image
 
 ![image](https://github.com/Kobayashi28/Projects/assets/43181693/9b1b64d5-59fa-4eda-a7be-83965b8b5d5c)
+
+![image](https://github.com/Kobayashi28/Projects/assets/43181693/f88db1c9-ce95-4160-b920-bb202533456f)
+
